@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1">
+    <TextView android:id="@+id/Text0"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textSize="24sp"
+        android:textColor="#708090"
+        android:text="CO2浓度"
+        android:layout_weight="0.07" />
+    <ScrollView
+        android:id="@+id/ScrollView01"
+
+        android:layout_height="30dp"
+        android:layout_width="80dp"
+        android:scrollbars="vertical">
+        <TextView android:id="@+id/in"
+            android:layout_width="fill_parent"
+            android:textSize="30sp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:textColor="#708090"
+        android:background="@null"
+        android:textSize="24sp"
+        android:text="服务器环境评级：" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:textSize="40sp"
+        android:background="@null"
+        android:textColor="#ffffff" />
+
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_weight="0.91" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:text="连接"
+            android:id="@+id/btn_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onConnectButtonClicked">
+        </Button>
+
+        <Button
+            android:text="退出"
+            android:id="@+id/Button06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onQuitButtonClicked">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

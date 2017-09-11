@@ -1,0 +1,4 @@
+<resources>
+    <string name="hello">Hello World, BTClient!</string>
+    <string name="app_name">Bluetooth_AutoConnect_hc05</string>
+</resources>
